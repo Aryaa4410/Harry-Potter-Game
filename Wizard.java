@@ -1,12 +1,12 @@
 public class Wizard
 {
-  String name;
+  String wizardName;
   int hp;
   String[] spells;
 
-  public Wizard(String name, int hp, String[] spells)
+  public Wizard(String wizardName, int hp, String[] spells)
   {
-    this.name = name;
+    this.wizardName = wizardName;
     this.hp = hp;
     this.spells = spells;
   }
@@ -18,7 +18,10 @@ public class Wizard
   {
     if(hp > 0)
     {
-      return hp;
+      return true;
+    }
+    else{
+      return false;
     }
   }
   public void printStatus()
